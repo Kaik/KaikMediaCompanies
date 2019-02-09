@@ -1,0 +1,105 @@
+services:
+# Basics
+
+#    kaikmedia_news_module.link_container:
+#        class: Kaikmedia\NewsModule\Container\LinkContainer
+#        arguments:
+#          - "@translator.default"
+#          - "@router"
+#          - "@kaikmedia_news_module.access_manager"
+#          - "@=service('zikula_extensions_module.api.variable').get('KaikmediaNewsModule', 'enablecategorization', true)"
+#        tags:
+#          - { name: zikula.link_container }
+#
+#    kaikmedia_news_module.hook_subscriber.news_ui_hooks_subscriber:
+#        class: Kaikmedia\NewsModule\HookSubscriber\NewsUiHooksSubscriber
+#        arguments:
+#          - "@translator.default"
+#        tags:
+#            - { name: zikula.hook_subscriber, areaName: "subscriber.news.ui_hooks.news" }
+#            
+#    kaikmedia_news_module.hook_subscriber.comments_ui_hooks_subscriber:
+#        class: Kaikmedia\NewsModule\HookSubscriber\CommentsUiHooksSubscriber
+#        arguments:
+#          - "@translator.default"
+#        tags:
+#            - { name: zikula.hook_subscriber, areaName: "subscriber.news.ui_hooks.comments" }
+#
+#    kaikmedia_news_module.hook_subscriber.mainmedia_ui_hooks_subscriber:
+#        class: Kaikmedia\NewsModule\HookSubscriber\MainMediaUiHooksSubscriber
+#        arguments:
+#          - "@translator.default"
+#        tags:
+#            - { name: zikula.hook_subscriber, areaName: "subscriber.news.ui_hooks.mainmedia" }
+#
+#    kaikmedia_news_module.topic_hooked_meta:
+#        class: Kaikmedia\NewsModule\TopicHookedMeta\News
+#        arguments:
+#          - "@translator.default"
+#          - "@zikula_extensions_module.api.variable"
+#          - "@kaikmedia_news_module.news_manager"
+#          - "@kaikmedia_news_module.helper.categorisation_helper"
+#          - "@hook_dispatcher"
+#        tags:
+#            - { name: zikula.dizkus.topic_hooked_meta, bundleName: "KaikmediaNewsModule" }
+
+# Managers
+
+#    kaikmedia_news_module.access_manager:
+#        class: Kaikmedia\NewsModule\Security\AccessManager
+#        arguments: 
+#          - "@request_stack"
+#          - "@translator.default"
+#          - "@zikula_users_module.current_user"                   
+#          - "@zikula_permissions_module.api.permission"
+#
+#    kaikmedia_news_module.news_manager:
+#        class: Kaikmedia\NewsModule\Manager\NewsManager
+#        shared: false
+#        arguments:
+#          - "@translator.default"
+#          - "@doctrine.orm.default_entity_manager"
+#          - "@zikula_extensions_module.api.variable"
+#          - "@kaikmedia_news_module.helper.categorisation_helper"
+#
+#    kaikmedia_news_module.news_collection_manager:
+#        class: Kaikmedia\NewsModule\Manager\NewsCollectionManager
+#        shared: false
+#        arguments:
+#          - "@kernel"
+#          - "@request_stack"
+#          - "@doctrine.orm.default_entity_manager"
+#          - "@zikula_extensions_module.api.variable"
+#          - "@kaikmedia_news_module.helper.categorisation_helper"
+
+# HELPERS
+#
+#    kaikmedia_news_module.import_helper:
+#        class: Kaikmedia\NewsModule\Helper\ImportHelper
+#        arguments:
+#          - "@kernel"
+#          - "@request_stack"
+#          - "@doctrine.orm.default_entity_manager"
+#          - "@zikula_extensions_module.api.variable"
+#
+#    kaikmedia_news_module.helper.search_helper:
+#        class: Kaikmedia\NewsModule\Helper\SearchHelper
+#        arguments:
+#          - '@doctrine.orm.entity_manager'
+#          - '@zikula_categories_module.api.category_permission'
+#          - '@session'
+#          - "@=service('zikula_extensions_module.api.variable').get('KaikmediaNewsModule', 'enablecategorization', true)"
+#          - "@kaikmedia_news_module.access_manager"
+#        tags:
+#          - { name: zikula.searchable_module, bundleName: KaikmediaNewsModule}
+#
+#    kaikmedia_news_module.helper.categorisation_helper:
+#        class: Kaikmedia\NewsModule\Helper\CategorisationHelper
+#        arguments:
+#          - '@doctrine.orm.entity_manager'
+#          - '@zikula_categories_module.api.category_permission'
+#          - '@session'
+#          - "@=service('zikula_extensions_module.api.variable').get('KaikmediaNewsModule', 'enablecategorization', true)"
+#          - "@kaikmedia_news_module.access_manager"
+#          - "@zikula_categories_module.category_registry_repository"
+#          - "@zikula_categories_module.category_repository"

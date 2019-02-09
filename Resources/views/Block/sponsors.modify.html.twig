@@ -1,0 +1,30 @@
+{#{% form_theme form with ['ZikulaDizkusModule:Form:radio.html.twig'] %}#}
+<div class="form-group">
+    {{ form_label(form.content, __('Content') ,{ 'label_attr': {'class': 'col-md-3'} }) }}
+    <div class="col-lg-9">
+        {{ form_widget(form.content, { 'attr': {'class': ''} }) }}
+    </div>
+</div>
+<div class="form-group">
+    {{ form_label(form.sponsorType, __('Sponsor type') ,{ 'label_attr': {'class': 'col-md-3'} }) }}
+    <div class="col-lg-9">
+        {{ form_widget(form.sponsorType, { 'attr': {'class': '', 'size': 70, 'maxlength':150 } }) }}
+    </div>
+</div>
+<div class="form-group">
+    {{ form_label(form.template, __('Name of template file') ,{ 'label_attr': {'class': 'col-md-3'} }) }} 
+    <div class="col-lg-9">
+        {{ form_widget(form.template, { 'attr': {'class': '', 'size': 70, 'maxlength':150 } }) }}                
+    </div>
+    <p class="col-md-12 help-block alert alert-info">
+        {{ __("Notice: Enter twig template name without extension.")}} <br />
+        {{ __("Example: For template 'recentposts.html.twig' enter 'recentposts'.")}}        
+    </p>  
+</div>
+<div class="form-group">
+    {{ form_label(form.css, __('Additional css') ,{ 'label_attr': {'class': 'col-md-3'} }) }}
+    <div class="col-lg-9">
+        {{ form_widget(form.css, { 'attr': {'class': '', 'size': 70, 'maxlength':150 } }) }}
+    </div>
+</div>
+{#{{ notifyDisplayHooks('blocks.ui_hooks.htmlblock.content.form_edit', form.vars.value.bid|default(null)) }}#}

@@ -1,0 +1,71 @@
+.companies-block-sponsors .sponsors-heading {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.card-sponsor { 
+    border-color: #ddd;
+    background-color: #fff;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.card-sponsor a:hover { 
+    text-decoration: none;
+}
+.card-sponsor .card-header,
+.card-sponsor .card-header { 
+    border-bottom: 1px solid #ddd; 
+    padding: 8px; 
+}
+.card.card-sponsor .card-body { 
+    padding: 5px;
+}
+.card.card-sponsor .card-img { 
+    position: relative; 
+    padding: 0; 
+    display: block; 
+}
+.card-sponsor .card-img:first-child img { 
+    border-radius: 6px 6px 0 0; 
+}
+.card-sponsor .card-left { 
+    padding-right: 4px; 
+}
+.card-sponsor .card-right { 
+    padding-left: 4px; 
+}
+.card-sponsor p:last-child { 
+    margin-bottom: 0; 
+}
+.card-sponsor .card-caption { 
+    color: #fff; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+.card-sponsor .card-body .h3 {
+    font-size: 1.1vw;
+    margin-bottom: 3px;
+}
+.card-sponsor .card-footer { 
+    color: #666;
+    /*display: block;*/
+}
+.card-sponsor .card-footer { 
+    border-top: 1px solid #ddd; 
+    padding: 8px; 
+}
+.card.card-sponsor .card-line-info {
+    margin: 0;
+}
+.card.card-sponsor .card-line-contact {
+    margin: 0;
+}
+
+.sponsors-type-0 .card-body {
+    min-height: 100px;
+}
+.sponsors-type-1 .card-body {
+    /*min-height: 150px;*/
+}
+.sponsors-type-2 .card-body {
+    min-height: 150px;
+}
