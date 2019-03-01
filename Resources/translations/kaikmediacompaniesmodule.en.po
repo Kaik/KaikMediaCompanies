@@ -1,0 +1,2 @@
+msgid "Sponsors"
+msgstr "Sponsorzy"
