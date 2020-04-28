@@ -72,3 +72,13 @@
 .sponsors-type-2 .card-body {
     min-height: 150px;
 }
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .card.card-sponsor .card-line-info {
+        display:none;
+    }
+    .card.card-sponsor .card-footer {
+        display:none;
+    }
+}
