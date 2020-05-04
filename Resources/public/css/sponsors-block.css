@@ -3,7 +3,7 @@
 }
 .companies-block-sponsors .sponsors-heading {
     text-transform: uppercase;
-    margin-bottom: 10px;
+    font-size: 0.8em;
 }
 .card-sponsor { 
     border-color: #ddd;
