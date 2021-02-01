@@ -81,4 +81,17 @@
     .card.card-sponsor .card-footer {
         display:none;
     }
+    .companies-block-sponsors {
+        /*padding: 0px !important;/*/
+    }
+    
+    .companies-block-sponsors > div > div {
+        padding: 5px !important;
+    }
+    .card-sponsor { 
+        border-color: #ddd;
+        background-color: #fff;
+        margin-bottom: 5px;
+        text-align: center;
+    }    
 }
